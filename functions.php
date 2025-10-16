@@ -190,3 +190,10 @@
         ) ) );        
     }
     add_action( 'widgets_init', 'wpdevart_coffee_shop_cafe_widgets_init' );
+
+    // functions.php in child theme
+function child_enqueue_sticky_header() {
+    wp_enqueue_script('child-sticky-header', get_stylesheet_directory_uri() . '/js/sticky-header.js', ['jquery'], '1.0', true);
+    wp_enqueue_style('child-sticky-header-css', get_stylesheet_directory_uri() . '/css/sticky-header.css');
+}
+add_action('wp_enqueue_scripts', 'child_enqueue_sticky_header');

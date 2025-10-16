@@ -14,3 +14,35 @@
     License URI: http://www.gnu.org/licenses/gpl-2.0.html
     Tags: translation-ready, e-commerce, blog, portfolio, one-column, left-sidebar, right-sidebar, custom-logo, custom-menu, custom-colors, editor-style, featured-images, footer-widgets, full-width-template, theme-options, two-columns, threaded-comments, grid-layout, block-styles, block-patterns
 */
+.child-hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.hero-button {
+  display: inline-block;
+  padding: 0.8em 2em;
+  background: #c59c6d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+.hero-button:hover {
+  background: #b68a58;
+}

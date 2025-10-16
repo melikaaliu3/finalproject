@@ -1,0 +1,12 @@
+.site-header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff; /* or semi-transparent, depends on your design */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+body.admin-bar .site-header.sticky {
+  top: 32px; /* adjust if admin bar is present */
+}
